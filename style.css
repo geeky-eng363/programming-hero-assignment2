@@ -11,7 +11,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(162, 236, 255, 0.651);
 }
 .container{
 margin-bottom: 50px;
@@ -19,7 +19,7 @@ margin-bottom: 50px;
 
 /* cover page */
 .cover{
-    background-color: blue;
+    background-color: rgb(26, 35, 150);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -37,13 +37,14 @@ flex-direction: row;
     text-align: left;
     font-size: 40px;
     padding-left: 150px;
- 
+    color: rgb(255, 255, 255);
 }
 
 .cover-button{
-    background-color: violet;
-    width: 140px;
+    background-color:rgb(245, 168, 3);
+    width: 130px;
     margin: 150px;
+    border-radius: 5px;
     text-align: center;
     
 }
@@ -60,10 +61,6 @@ flex-direction: row;
     width: 550px;
     padding-right: 150px;
 }
-
-
-
-
 /* All Players Name */
 .players{
     display: grid;
@@ -74,8 +71,8 @@ flex-direction: row;
 }
 .player{
     width: 300px;
-    height: 255px;
-    background-color: skyblue;
+    height: 310px;
+    background-color: white;
     padding: 15px 15px 255px 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
@@ -109,7 +106,7 @@ flex-direction: row;
 
 }
 .footer-icon .icon{
-    color: silver;
+    color: rgb(133, 131, 131);
     padding: 5px;
 }
 .footer-text{

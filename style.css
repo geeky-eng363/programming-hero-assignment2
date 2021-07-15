@@ -11,6 +11,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.24);
 }
 .container{
 margin-bottom: 50px;
@@ -19,37 +20,71 @@ margin-bottom: 50px;
 /* cover page */
 .cover{
     background-color: blue;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.cover-info{
+.cover .cover-info{
 display: flex;
+flex-direction: row;
+
 
 }
 .cover-title h1{
-    width: 483px;
-    height: 228px;
+    width: 200px;
     text-align: left;
+    font-size: 40px;
+    padding-left: 150px;
+ 
 }
+
+.cover-button{
+    background-color: violet;
+    width: 140px;
+    margin: 150px;
+    text-align: center;
+    
+}
+.cover-button p a{
+    text-decoration: none;
+    color: white;
+}
+.cover-button:hover p{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
 .cover-image img{
     width: 550px;
-
+    padding-right: 150px;
 }
+
+
+
 
 /* All Players Name */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
 }
 .player{
     width: 300px;
     height: 255px;
+    background-color: skyblue;
     padding: 15px 15px 255px 15px;
-    /* display: flex; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    
 }
 .players .player .player-image img{
     width: 302px;
     height: 258px;
+    border-radius: 3px;
 }
 .players .player .player-name h2{
     font-size: 28px;
@@ -61,3 +96,65 @@ display: flex;
     text-align: left;
     border: 1px solid red;
 }
+
+
+/* Footer Section */
+.bottom-end{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+
+}
+.footer-icon .icon{
+    color: silver;
+    padding: 5px;
+}
+.footer-text{
+    text-align: center;
+}
+
+
+
+/* media query
+ for mobile */
+ @media only screen and (max-width:688px){
+     .container{
+         width: auto;
+     }
+     .cover{
+         display: flex;
+         flex-direction: column;
+     }
+     .players{
+        display: flex;
+        flex-direction: column;
+     }
+     .bottom-end{
+        display: flex;
+        flex-direction: column;
+     }
+
+ }
+ /* media queries
+ for tablet */
+ @media only screen and (min-width:688px){
+    .container{
+        width: auto;
+    }
+    .cover{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bottom-end{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+ }
